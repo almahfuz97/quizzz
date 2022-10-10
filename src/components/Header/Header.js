@@ -1,12 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../../logo192.png";
 
 export default function Header() {
   return (
     <div>
       <nav className=" my-8 flex justify-between">
         <div className=" flex items-center">
-          <img src="logo192.png" alt="logo" className="w-10 mr-2" />
+          <img src={logo} alt="logo" className="w-10 mr-2" />
           <h1 className=" font-bold text-2xl text-yellow-500">Quizzz</h1>
         </div>
         <ul className="flex">
