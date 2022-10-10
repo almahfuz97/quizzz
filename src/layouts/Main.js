@@ -4,7 +4,7 @@ import Header from "../components/Header/Header";
 
 export default function Main() {
   return (
-    <div>
+    <div className="px-8 lg:px-32">
       <Header />
       <Outlet />
     </div>

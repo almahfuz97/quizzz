@@ -2,6 +2,11 @@ import logo from "./logo.svg";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./layouts/Main";
+import Topics from "./components/Topics/Topics";
+import Stats from "./components/Stats/Stats";
+import Blog from "./components/Blog/Blog";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
+import { topicsLoader } from "./loaders/topicsLoader";
 
 function App() {
   const router = createBrowserRouter([
@@ -11,19 +16,25 @@ function App() {
       children: [
         {
           path: "/",
-          element: <div>hello people</div>,
+          element: <Topics />,
+          loader: topicsLoader,
         },
         {
           path: "/topics",
-          element: <div>Topcs </div>,
+          element: <Topics />,
+          loader: topicsLoader,
         },
         {
           path: "/stats",
-          element: <div> stats</div>,
+          element: <Stats />,
         },
         {
           path: "/blog",
-          element: <div>blog</div>,
+          element: <Blog />,
+        },
+        {
+          path: "*",
+          element: <ErrorPage />,
         },
       ],
     },
