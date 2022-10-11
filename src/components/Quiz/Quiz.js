@@ -26,7 +26,7 @@ export default function Quiz() {
     <div>
       <ToastContainer autoClose={1500} />
       <div className="my-10 flex justify-between items-center">
-        <h1 className="text-center font-bold text-xl  md:text-2xl text-red-500">
+        <h1 className="text-center font-bold text-xl  md:text-2xl text-yellow-600">
           Quiz for {quizes.data.name}
         </h1>
         <div>
