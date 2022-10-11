@@ -9,6 +9,7 @@ export default function Quiz() {
   const [answer, setAnswer] = useState({});
   const [_id, setId] = useState();
 
+  let quesNum = 1;
   const handleOptionClick = (id, option, corrAnswer) => {
     //checking if the answer is correct or
     option === corrAnswer ? showToast(0) : showToast(1);
@@ -23,7 +24,7 @@ export default function Quiz() {
   console.log(quizes);
   return (
     <div>
-      <ToastContainer autoClose={400} />
+      <ToastContainer autoClose={1500} />
       <div className="my-10 flex justify-between items-center">
         <h1 className="text-center font-bold text-xl  md:text-2xl text-red-500">
           Quiz for {quizes.data.name}
@@ -38,6 +39,7 @@ export default function Quiz() {
           <QuizLayout
             key={quiz.id}
             quiz={quiz}
+            quesNum={quesNum++}
             handleOptionClick={handleOptionClick}
           />
         ))}

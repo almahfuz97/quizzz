@@ -14,7 +14,7 @@ export default function Stats() {
   const data = useLoaderData();
   console.log(data.data);
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mt-32">
       <div className="w-full md:w-3/4 lg:w-2/4 flex flex-col items-center bg-gradient-to-l from-yellow-100 via-yellow-500 to-yellow-100 shadow-lg p-2 rounded">
         <div className="mb-8">
           <h1 className="text-2xl md:text-3xl font-bold mt-2 text-white drop-shadow">

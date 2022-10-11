@@ -11,7 +11,7 @@ export default function Header() {
           <h1 className=" font-bold text-2xl text-yellow-500">Quizzz</h1>
         </div>
         <ul className="flex">
-          <li className="mr-6 text-yellow-600">
+          <li className="mr-6 hover:text-purple-400 text-yellow-600">
             <NavLink
               to={"/topics"}
               className={({ isActive }) =>
@@ -24,7 +24,7 @@ export default function Header() {
             </NavLink>{" "}
           </li>
 
-          <li className="mr-6 text-yellow-600">
+          <li className="mr-6 hover:text-purple-400 text-yellow-600">
             <NavLink
               to={"/stats"}
               className={({ isActive }) =>
@@ -37,7 +37,7 @@ export default function Header() {
             </NavLink>{" "}
           </li>
 
-          <li className="mr-6 text-yellow-600">
+          <li className="mr-6 hover:text-purple-400 text-yellow-600">
             <NavLink
               to={"/blog"}
               className={({ isActive }) =>
