@@ -24,7 +24,7 @@ export default function Topics() {
             You can find so many quizzes here. Practice Quiz To Improve Your
             Knowledge On Various Topics.{" "}
           </p>
-          <div className="flex justify-center mt-6 animate-bounce">
+          <div className="flex justify-center mt-10 animate-bounce">
             <FontAwesomeIcon
               icon={faArrowAltCircleDown}
               className=" font-bold text-4xl text-yellow-500 "
