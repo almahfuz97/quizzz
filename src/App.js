@@ -33,6 +33,7 @@ function App() {
         {
           path: "/blog",
           element: <Blog />,
+          loader: async () => fetch("questionAns.json"),
         },
         {
           path: "/topic/:topicId",

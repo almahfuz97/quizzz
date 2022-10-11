@@ -4,8 +4,6 @@ import {
   Bar,
   BarChart,
   LabelList,
-  Legend,
-  LineChart,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -29,9 +27,7 @@ export default function Stats() {
               <XAxis dataKey={"name"} />
               <YAxis />
               <Tooltip />
-              <Bar dataKey={"total"} fill={"#acc310"}>
-                <LabelList dataKey="name" />
-              </Bar>
+              <Bar dataKey={"total"} fill={"#fc5bbc"}></Bar>
             </BarChart>
           </ResponsiveContainer>
         </div>
