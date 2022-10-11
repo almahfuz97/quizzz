@@ -28,6 +28,7 @@ function App() {
         {
           path: "/stats",
           element: <Stats />,
+          loader: topicsLoader,
         },
         {
           path: "/blog",

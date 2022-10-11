@@ -5,7 +5,7 @@ import logo from "../../logo192.png";
 export default function Header() {
   return (
     <div>
-      <nav className=" my-8 flex justify-between">
+      <nav className=" my-8 flex justify-between items-center">
         <div className=" flex items-center">
           <img src={logo} alt="logo" className="w-10 mr-2" />
           <h1 className=" font-bold text-2xl text-yellow-500">Quizzz</h1>
@@ -16,8 +16,8 @@ export default function Header() {
               to={"/topics"}
               className={({ isActive }) =>
                 isActive
-                  ? "text-purple-400 font-semibold ease duration-200 text-lg"
-                  : "ease duration-200"
+                  ? "text-purple-400  ease duration-100"
+                  : "ease duration-100"
               }
             >
               Topics
@@ -29,8 +29,8 @@ export default function Header() {
               to={"/stats"}
               className={({ isActive }) =>
                 isActive
-                  ? "text-purple-400 font-semibold ease duration-200 text-lg"
-                  : "ease duration-200"
+                  ? "text-purple-400  ease duration-100"
+                  : "ease duration-100"
               }
             >
               Statistics
@@ -42,8 +42,8 @@ export default function Header() {
               to={"/blog"}
               className={({ isActive }) =>
                 isActive
-                  ? "text-purple-400 font-semibold ease duration-200 text-lg"
-                  : "ease duration-200"
+                  ? "text-purple-400  ease duration-100"
+                  : "ease duration-100"
               }
             >
               Blog

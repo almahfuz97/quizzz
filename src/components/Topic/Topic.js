@@ -9,7 +9,7 @@ export default function Topic({ topic }) {
     navigate(`/topic/${id}`);
   };
   return (
-    <div className="border p-4 rounded-md bg-white shadow-md drop-shadow-sm mx-2 mt-10 relative hover:bg-slate-100 duration-200 hover:cursor-pointer">
+    <div className="border p-4 rounded-md bg-white shadow-md drop-shadow-sm mx-2 mt-10 relative hover:bg-slate-100 duration-200 hover:cursor-pointer ">
       <small className=" absolute top-0 -my-4 mr-2 shadow-xl text-red-600 right-0 p-2 bg-transparent border rounded-lg font-semibold">
         Total Quiz: {total}
       </small>
