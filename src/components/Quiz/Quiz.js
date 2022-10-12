@@ -29,10 +29,10 @@ export default function Quiz() {
         <h1 className="text-center font-bold text-xl  md:text-2xl text-yellow-600">
           Quiz for {quizes.data.name}
         </h1>
-        <div>
+        {/* <div>
           <h1 className=" text-red-500">Correct:</h1>
           <h1 className=" text-red-500">Wrong: </h1>
-        </div>
+        </div> */}
       </div>
       <form>
         {quizes.data.questions.map((quiz) => (

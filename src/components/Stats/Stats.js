@@ -27,7 +27,7 @@ export default function Stats() {
               <XAxis dataKey={"name"} />
               <YAxis />
               <Tooltip />
-              <Bar dataKey={"total"} fill={"#fc5bbc"}></Bar>
+              <Bar dataKey={"total"} fill={"#dddddd"}></Bar>
             </BarChart>
           </ResponsiveContainer>
         </div>
