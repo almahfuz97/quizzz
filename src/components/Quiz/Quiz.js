@@ -6,8 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function Quiz() {
   const quizes = useLoaderData();
-  const [answer, setAnswer] = useState({});
-  const [_id, setId] = useState();
+  // const [answer, setAnswer] = useState({});
+  // const [_id, setId] = useState();
 
   let quesNum = 1;
   const handleOptionClick = (id, option, corrAnswer) => {

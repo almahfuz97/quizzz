@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./layouts/Main";
@@ -17,6 +16,11 @@ function App() {
       children: [
         {
           path: "/",
+          element: <Topics />,
+          loader: topicsLoader,
+        },
+        {
+          path: "/home",
           element: <Topics />,
           loader: topicsLoader,
         },

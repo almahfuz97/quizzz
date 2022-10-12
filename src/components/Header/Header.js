@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHamburger } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../logo192.png";
@@ -20,8 +18,8 @@ export default function Header() {
           <h1 className=" font-bold text-2xl text-yellow-500">Quizzz</h1>
         </div>
         <ul
-          className={`md:flex  md:visible absolute md:relative right-9 duration-500 md:mt-0 ${
-            toggleBurger ? "mt-36" : "-mt-96"
+          className={`md:flex  md:visible absolute md:relative right-9 duration-500 md:mt-0 shadow shadow-yellow-500 ${
+            toggleBurger ? "mt-40" : "-mt-96"
           } bg-slate-50 border md:bg-transparent md:border-none p-4 rounded`}
         >
           <li
@@ -72,11 +70,15 @@ export default function Header() {
             </NavLink>{" "}
           </li>
         </ul>
-        <div onClick={handleBurger} className=" md:hidden relative p-1">
+        {/* making hamburger */}
+        <div
+          onClick={handleBurger}
+          className=" md:hidden relative cursor-pointer"
+        >
           <div
             className={`w-6 h-0.5  duration-300 mb-1 bg-yellow-500  ${
               toggleBurger
-                ? "rotate-45 origin-center absolute right-0.5 "
+                ? "rotate-45 origin-center absolute right-0.5 p-0.5"
                 : "rotate-0 relative"
             }`}
           ></div>
@@ -88,7 +90,7 @@ export default function Header() {
           <div
             className={`w-6 h-0.5 mb-1 duration-300 bg-yellow-500  ${
               toggleBurger
-                ? "-rotate-45 origin-center absolute right-0.5 "
+                ? "-rotate-45 origin-center absolute right-0.5 p-0.5"
                 : "rotate-0 relative"
             }`}
           ></div>
