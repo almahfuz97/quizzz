@@ -1,8 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
-// import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 import React from "react";
 import { toast, ToastContainer } from "react-toastify";
 
@@ -19,7 +17,7 @@ export default function QuizLayout({ quiz, handleOptionClick, quesNum }) {
   return (
     <div className="border mb-4 px-4 py-8 rounded shadow-sm bg-gradient-to-r from-yellow-400 via-red-300 to-yellow-400 shadow-yellow-200 relative">
       <div className="mb-4 flex">
-        <p className=" text-white font-bold text-xl">{quesNum}. </p>
+        <p className=" text-white font-bold text-xl ml-1">{quesNum}. </p>
         <h1
           className="font-bold text-xl text-white ml-1"
           dangerouslySetInnerHTML={{ __html: question }}

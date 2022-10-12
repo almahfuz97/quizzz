@@ -18,26 +18,31 @@ function App() {
           path: "/",
           element: <Topics />,
           loader: topicsLoader,
+          errorElement: <ErrorPage />,
         },
         {
           path: "/home",
           element: <Topics />,
           loader: topicsLoader,
+          errorElement: <ErrorPage />,
         },
         {
           path: "/topics",
           element: <Topics />,
           loader: topicsLoader,
+          errorElement: <ErrorPage />,
         },
         {
           path: "/stats",
           element: <Stats />,
           loader: topicsLoader,
+          errorElement: <ErrorPage />,
         },
         {
           path: "/blog",
           element: <Blog />,
           loader: async () => fetch("questionAns.json"),
+          errorElement: <ErrorPage />,
         },
         {
           path: "/topic/:topicId",
@@ -46,6 +51,7 @@ function App() {
             fetch(
               `https://openapi.programming-hero.com/api/quiz/${params.topicId}`
             ),
+          errorElement: <ErrorPage />,
         },
         {
           path: "*",
